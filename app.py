@@ -10,7 +10,7 @@ from docx.shared import Pt, RGBColor, Inches, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 # --- 1. CẤU HÌNH TRANG ---
-st.set_page_config(page_title="Trợ lý Giáo án NLS", page_icon="📘", layout="centered")
+st.set_page_config(page_title="Trợ lý Giáo án Năng lực số", page_icon="📘", layout="centered")
 
 FILE_KHUNG_NANG_LUC = "khungnanglucso.pdf"
 
