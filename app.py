@@ -12,7 +12,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 # --- 1. CẤU HÌNH TRANG ---
 st.set_page_config(page_title="Trợ lý Giáo án (Năng lực số)", page_icon="📘", layout="centered")
 
-FILE_KHUNG_NANG_LUC="khungnanglucso.pdf"
+FILE_KHUNG_NANG_LUC = "khungnanglucso.pdf"
 
 # --- 2. HÀM XỬ LÝ WORD (ĐÃ CẬP NHẬT: GẠCH ĐẦU DÒNG THỦ CÔNG) ---
 
@@ -191,7 +191,7 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
     <h1>📘 TRỢ LÝ SOẠN GIÁO ÁN TỰ ĐỘNG (Năng lực số)</h1>
-    <p>Tác giả: Nguyễn Thị Quy - Trường Tiểu học Ngọc Đường - ĐT: 0823.256.001</p>
+    <p>Tác giả: Nguyễn Thị Quy - Trường Tiểu học Ngọc Đường - ĐT: 0823 256 001</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -333,7 +333,7 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
                 buf.seek(0)
                 
                 st.download_button(
-                    label="⬇️ TẢI FILE WORD CHUẨN A4",
+                    label="⬇️ TẢI FILE WORD",
                     data=buf,
                     file_name=f"GiaoAn_{ten_bai}.docx",
                     mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -347,4 +347,4 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
 
 # --- CHÂN TRANG ---
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: #666;'>© 2026 - Nguyễn Thị Quy - Trường Tiểu học Ngọc Đường - ĐT: 0823.256.001</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: #666;'>© 2026 - Nguyễn Thị Quy - Trường Tiểu học Ngọc Đường - ĐT: 0823 256 001</div>", unsafe_allow_html=True)
